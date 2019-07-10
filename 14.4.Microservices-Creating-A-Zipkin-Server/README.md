@@ -33,14 +33,20 @@
 
 * Add @EnableZipkinServer annotation to the Main class
 
-	@SpringBootApplication
-	@EnableZipkinServer
-	public class Application {
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
-	}
+		@SpringBootApplication
+		@EnableZipkinServer
+		public class Application {
+		public static void main(String[] args) {
+			SpringApplication.run(Application.class, args);
+		}
+		}
 
 
 * Change the server port to 8085 in application.properties file
  
+* Run all services 14.1, 14.2,14.3, 14.4
+
+* Access 14.3 service http://localhost:8083/fastpass/customer/100
+
+* Access zipkin service http://localhost:8085 observe *dependency* link on the page
+
