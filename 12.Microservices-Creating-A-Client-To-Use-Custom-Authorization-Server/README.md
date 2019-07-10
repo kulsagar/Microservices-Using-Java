@@ -12,15 +12,15 @@
 * Open Application.java file and add following code
 
 
-	@SpringBootApplication
-	public class Application implements CommandLineRunner{
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
-	@Override
-	public void run(String... args) throws Exception {
-		System.out.println("Job started");
-		
+		@SpringBootApplication
+		public class Application implements CommandLineRunner{
+		public static void main(String[] args) {
+			SpringApplication.run(Application.class, args);
+		}
+		@Override
+		public void run(String... args) throws Exception {
+			System.out.println("Job started");
+
 		ResourceOwnerPasswordResourceDetails resourceDetails = new ResourceOwnerPasswordResourceDetails();
 		resourceDetails.setClientAuthenticationScheme(AuthenticationScheme.header);
 		resourceDetails.setAccessTokenUri("http://localhost:9000/oauth/token");
