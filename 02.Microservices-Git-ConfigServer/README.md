@@ -22,6 +22,16 @@
 	#spring.cloud.config.server.git.username=username
 	#spring.cloud.config.server.git.password=password
 
+	* Add following code in Main class
+	
+	@SpringBootApplication
+	@EnableConfigServer
+	public class Application {
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+	}
+	
 * Run the service and access following url in browser /postman
 
 	http://localhost:8889/s1rates/default
