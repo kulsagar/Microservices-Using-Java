@@ -101,5 +101,4 @@
 		}
 		}
 
-
- 
+* Access the client application http://localhost:8082/persondetail?personid=1
