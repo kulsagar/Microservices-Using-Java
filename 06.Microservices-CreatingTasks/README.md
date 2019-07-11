@@ -12,28 +12,28 @@
 
 * Add following code in Main class
 
-	@SpringBootApplication
-	@EnableTask
-	public class Application {
-	
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
-	
-	@Bean
-	public TollProcessorTask tollProcessingTask(){
-		return new TollProcessorTask();
-	} 
-	public class TollProcessorTask implements CommandLineRunner{
-	
-		@Override
-		public void run(String... strings) throws Exception {
-			
-			for(String s: strings)
-			System.out.println(s);
+		@SpringBootApplication
+		@EnableTask
+		public class Application {
+
+		public static void main(String[] args) {
+			SpringApplication.run(Application.class, args);
 		}
-		
-	} 
-	}
+
+		@Bean
+		public TollProcessorTask tollProcessingTask(){
+			return new TollProcessorTask();
+		} 
+		public class TollProcessorTask implements CommandLineRunner{
+
+			@Override
+			public void run(String... strings) throws Exception {
+
+				for(String s: strings)
+				System.out.println(s);
+			}
+
+		} 
+		}
 
 * Pass Command Line Arguments, they will be accessed by the task.

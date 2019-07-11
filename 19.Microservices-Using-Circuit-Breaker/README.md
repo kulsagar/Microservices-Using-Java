@@ -1,4 +1,4 @@
-* Create a copy of 18.Microservices-Sending-Health-Info
+* Create a copy of 17.Microservices-Discovering-Service-With-Eureka
 * Add following dependency
 
 		<dependency>
@@ -55,9 +55,9 @@
 
 * Run all 3 services -   
 
-	15.Microservices-Creating-Eureka-Server
-	16.Microservices-Registering-Service-With-Eureka
-	19.Microservices-Using-Circuit-Breaker
+		15.Microservices-Creating-Eureka-Server
+		16.Microservices-Registering-Service-With-Eureka
+		19.Microservices-Using-Circuit-Breaker
 
 * Open browser and access the Client   
 
