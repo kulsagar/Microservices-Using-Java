@@ -10,22 +10,22 @@
 
 3. update the application.yml file with following entries
   
-	server:
-	  port: 8888
-	spring:
-	  cloud:
-	    config:
-	      server:
-	        git:
-	          uri: https://github.com/kulsagar/SpringCloudConfig
-	          #username: uname
-	          #password: pass
-	          search-paths:
-	          - 'station*'
-	  security:
-	    user:
-	      name: khulja
-	      password: simsim                
+		server:
+		  port: 8888
+		spring:
+		  cloud:
+		    config:
+		      server:
+			git:
+			  uri: https://github.com/kulsagar/SpringCloudConfig
+			  #username: uname
+			  #password: pass
+			  search-paths:
+			  - 'station*'
+		  security:
+		    user:
+		      name: khulja
+		      password: simsim                
       
 4. Use postman to send the request
 5. in authorization tab 

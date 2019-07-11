@@ -2,8 +2,8 @@
 
 * add following entries in bootstrap.properties
 	
-	spring.cloud.config.username=khulja
-	spring.cloud.config.password=simsim
-	
+		spring.cloud.config.username=khulja
+		spring.cloud.config.password=simsim
+
 * Access the **/rate** end point 
 	

@@ -17,20 +17,21 @@
 
 * Add following code to application.properties file
 	
-	server.port=8889
-	spring.cloud.config.server.git.uri=https://github.com/kulsagar/SpringCloudConfig
-	#spring.cloud.config.server.git.username=username
-	#spring.cloud.config.server.git.password=password
+		server.port=8889
+		spring.cloud.config.server.git.uri=https://github.com/kulsagar/SpringCloudConfig
+		#spring.cloud.config.server.git.username=username
+		#spring.cloud.config.server.git.password=password
 
 	* Add following code in Main class
 	
-	@SpringBootApplication
-	@EnableConfigServer
-	public class Application {
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
-	}
+	
+		@SpringBootApplication
+		@EnableConfigServer
+		public class Application {
+		public static void main(String[] args) {
+			SpringApplication.run(Application.class, args);
+		}
+		}
 	
 * Run the service and access following url in browser /postman
 
@@ -41,7 +42,7 @@
 
 * Add following property to apllication.properties file
 
-	spring.cloud.config.server.git.search-paths=station*
+		spring.cloud.config.server.git.search-paths=station*
 
 * Restart the service
 
