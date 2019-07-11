@@ -4,8 +4,8 @@
 
 * Open application.properties file and following code
 
-	server.port=8085
-	eureka.client.register-with-eureka=false
+		server.port=8085
+		eureka.client.register-with-eureka=false
 
 * Run the app **http://localhost:8085/hystrix**
 
