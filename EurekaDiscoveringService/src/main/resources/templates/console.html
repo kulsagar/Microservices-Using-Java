@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Toll Information</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-12" style="text-align:center">
+			<h1>Toll Information</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6" style="background-color:white;color:black;height:300px;font-family:Arial; border: 15px solid gray">
+			<table class="table" style="font-size:30px">
+				<tr>
+					<td style="text-align:right;font-weight:bold">Station ID:</td>
+					<td th:text="${tollrate.stationId}"></td>
+				</tr>
+				<tr>
+					<td style="text-align:right;font-weight:bold">Current Rate:</td>
+					<td th:text="${tollrate.currentRate}"></td>	
+				</tr>
+				<tr>
+					<td style="text-align:right;font-weight:bold">Time Stamp:</td>
+					<td th:text="${tollrate.timeStamp}"></td>	
+				</tr>
+			</table>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+    
+</body>
+</html>
